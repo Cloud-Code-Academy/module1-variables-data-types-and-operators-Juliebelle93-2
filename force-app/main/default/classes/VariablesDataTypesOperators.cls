@@ -31,9 +31,14 @@ public with sharing class VariablesDataTypesOperators {
      * @param b The second number.
      * @return The sum of the two numbers, or null if either number is null.
      */
-    public static Integer addition(Integer a, Integer b) {  
-        return null; // Replace null with the variable you used to store the result
+public static Integer addition(Integer a, Integer b) { 
+    if (a == null || b == null) 
+    {
+    return null;
     }
+    return a + b;
+
+}
 
     /**
      * Question 2
@@ -44,7 +49,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        if (a == null || b == null) {
+            return null;
+        }
+        Integer difference = a - b;
+        return difference;
     }
 
     /**
