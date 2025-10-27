@@ -38,7 +38,6 @@ public static Integer addition(Integer a, Integer b) {
     }
     integer addition = a + b;
     return addition;
-
 }
 
     /**
