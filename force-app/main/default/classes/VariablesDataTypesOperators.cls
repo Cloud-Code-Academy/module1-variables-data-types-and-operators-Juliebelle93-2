@@ -36,7 +36,8 @@ public static Integer addition(Integer a, Integer b) {
     {
     return null;
     }
-    return a + b;
+    integer addition = a + b;
+    return addition;
 
 }
 
@@ -65,7 +66,11 @@ public static Integer addition(Integer a, Integer b) {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        if (a == null || b == null) {
+            return null;
+        }
+        Integer product = a * b;
+        return product;
     }
 
     /**
@@ -78,7 +83,14 @@ public static Integer addition(Integer a, Integer b) {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Double division(Double a, Double b) {
-        return null; // Replace null with the variable you used to store the result
+        if (a == null || b == null) {
+            return null;
+        }
+        if (b == 0) {
+            return 0.0;
+        }
+        Double quotient = a / b;
+        return quotient;
     }
 
     /**
@@ -92,7 +104,15 @@ public static Integer addition(Integer a, Integer b) {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        if (num == null) {
+            return null;
+        }
+        if (Math.mod(num, 2) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+        
     }
 
     /**
